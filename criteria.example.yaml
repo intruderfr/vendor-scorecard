@@ -1,0 +1,48 @@
+# Example criteria for an enterprise SaaS RFP.
+# Weights MUST sum to 1.0. Each vendor is scored 1-5 per criterion in the CSV.
+#
+# Edit this file to match the priorities of your evaluation. Common patterns:
+#   - infrastructure tooling: bias toward security, reliability, cost
+#   - end-user SaaS:          bias toward usability, support, integrations
+#   - regulated industry:     bias toward compliance, security, auditability
+
+criteria:
+  - key: cost
+    label: Total Cost of Ownership
+    weight: 0.20
+    description: License + implementation + ongoing run cost over 3 years.
+
+  - key: security
+    label: Security Posture
+    weight: 0.20
+    description: SOC2 / ISO27001 status, encryption, IAM, vulnerability history.
+
+  - key: reliability
+    label: Reliability & SLA
+    weight: 0.15
+    description: Uptime SLA, status page transparency, regional redundancy.
+
+  - key: support
+    label: Support & Service
+    weight: 0.10
+    description: Response times, named CSM, regional coverage, language support.
+
+  - key: compliance
+    label: Compliance Fit
+    weight: 0.10
+    description: GDPR / HIPAA / PCI / regional data residency requirements.
+
+  - key: scalability
+    label: Scalability
+    weight: 0.10
+    description: Headroom for 5x growth without re-architecture.
+
+  - key: integration
+    label: Ecosystem & APIs
+    weight: 0.10
+    description: Public API quality, webhook coverage, native integrations.
+
+  - key: roadmap
+    label: Roadmap & Stability
+    weight: 0.05
+    description: Vendor financial health, product roadmap clarity, M&A risk.
